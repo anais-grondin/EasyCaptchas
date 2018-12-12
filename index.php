@@ -19,7 +19,7 @@ echo "<img src='script-captchas.php' alt='captchas' />";
 if(!isset($_POST['code'])) 
 {echo "Code de sécurité doit contenir une valeur !";}
 
-if(isset($_POST['code']))null($_POST['code'])
+if(isset($_POST['code']))empty($_POST['code'])
 {echo "Code de sécurité non valide !";}
 
 if(isset($SESSION['code']))
