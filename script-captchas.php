@@ -42,6 +42,7 @@ function getCode($length, $chars) {
 *****************************************************************/
 
 /* APPEL DE LA FONCTION POUR RECUPERER UNE CHAINE ALEATOIRE */
+$_SESSION_START()
 $code = getCode(5, $chaine);
 
 /* RETOURNE UN A UN LES SEGMENTS DE LA CHAINE */
