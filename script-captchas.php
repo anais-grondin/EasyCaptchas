@@ -44,7 +44,7 @@ function getCode($length, $chars) {
 /* APPEL DE LA FONCTION POUR RECUPERER UNE CHAINE ALEATOIRE */
 $_SESSION_START()
 $code = getCode(5, $chaine);
-
+$_SESSION[getCode(5, $chaine)];
 /* RETOURNE UN A UN LES SEGMENTS DE LA CHAINE */
 $char1 = substr($code,0,1);
 $char2 = substr($code,1,1);
